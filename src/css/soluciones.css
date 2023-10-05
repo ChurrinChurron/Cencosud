@@ -1,0 +1,977 @@
+@font-face {
+    font-family: Omnes;
+    src: url(../../tipografias/Omnes.ttf);
+    }
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    min-height: 100vh;
+    font-family: Omnes;
+    background-color: rgb(245, 245, 245);
+}
+
+header {
+
+    background: url(../../images/soluciones/banner-mobile.png) no-repeat bottom center;
+    background-size: cover;
+    padding: 30px 25px;
+    position: relative; 
+}
+
+.none {
+
+    display: none;
+}
+
+.hidden {
+
+    visibility: hidden;
+}
+
+.navEsc, .piePag__copyEsc{
+
+    display: none;
+}
+
+.navMovil {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navMovil > div > img {
+
+    width: 140px;
+}
+
+.navMovil__boton, .menuMovil__botonCerrar {
+
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.navMovil__boton:hover {
+
+    cursor: pointer;
+}
+
+.menuMovil {
+
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.menuMovil__botonLogo {
+
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.menuMovil__botonCerrar {
+
+    align-self: flex-end;
+    margin-bottom: 10px;
+}
+
+.menuMovil__botonCerrar:hover {
+
+    cursor: pointer;
+}
+
+.menuMovil__logo {
+
+    width: 45px;
+    margin: 0 auto;
+}
+
+.menuMovil__menu {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.menuMovil__menu > a {
+
+    text-decoration: none;
+    color: rgb(27, 27, 27);
+    font-size: 19px;
+    border-bottom:  1px solid rgb(211, 211, 211);
+    width: 90%;
+    padding: 20px 0;
+    text-align: center;
+    
+}
+
+.menuMovil__menu > .menuMovil__menu--ultimo {
+
+    border: none;
+    color: #22E49E;
+    font-weight: 600;
+}
+
+.menuMovil__menu--ultimo {
+
+    border: none;
+}
+
+.menuMovil__redes {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0 10px 0;
+    border-top: 1px solid rgb(211, 211, 211);
+}
+
+.menuMovil__redes > p {
+
+    letter-spacing: 2px;
+    margin-right: 20px;
+}
+
+.menuMovil__redes > a {
+
+    margin-right: 14px;
+}
+
+.menuMovil__redes > a:hover {
+
+    cursor: pointer;
+}
+
+.headerConten {
+
+    color: #fff;
+    margin: 20.3vw 10vw 30.3vw 0;
+}
+
+.headerConten__tit {
+
+    font-weight: 500;
+    font-size: 7vw;
+    line-height: 9vw;
+}
+
+.headerConten__subtit {
+
+    font-size: 3.1vw;
+    font-weight: 500;
+    width: 90%;
+    margin-top: 8px;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+
+.objetivos {
+
+    background: url(../../images/soluciones/fondo-mobile.jpg) no-repeat bottom right;
+    background-size: 80%;
+    padding-top: 50px;
+    position: relative;
+}
+
+.objetivos > h2 {
+
+    text-align: center;
+    font-weight: 500;
+    word-spacing: 3px;
+    letter-spacing: 3px;
+    font-size: 20px;
+}
+
+.objetivos > p {
+
+    text-align: center;
+    margin: 13px 20px 20px 20px;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 34px;
+}
+
+.objetivos > p > span {
+
+    background-color: #22E49E;
+}
+
+.objetivos__info > img {
+
+    display: none;
+}
+
+.objetivos__conten > div {
+
+    padding: 20px 0;
+}
+
+.conten > img {
+
+    width: 15.5em;
+    margin-bottom: 20px;
+}
+
+.conten > div {
+
+    display: flex;
+    align-items: flex-start;
+    padding: 0 25px;
+    margin-bottom: 30px;
+}
+
+.conten > div > img {
+
+    width: 2.4em;
+    margin-right: 10px;
+}
+
+.conten > div > p {
+
+    font-size: 15px;
+    margin-right: 2em;
+}
+
+.conten > div > p > span {
+
+    font-size: 17px;
+}
+
+hr {
+
+    width: 80%;
+    margin: 0 auto;
+    border-top: 3px dashed #495289;
+}
+
+.resultados {
+
+    background-color: #fff;
+    padding-bottom: 60px;
+}
+
+.resultados > img {
+
+    width: 80%;
+}
+
+.resultados__info {
+
+    padding: 40px 30px;
+}
+
+.resultados__info > h2 {
+
+    font-weight: 500;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.resultados__info > p {
+
+    font-size: 17px;
+    line-height: 26px;
+}
+
+.resultados__infoConten {
+
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: 20px;
+}
+
+.resultados__infoConten > img {
+
+    width: 10em;
+}
+
+.infoConten {
+
+    margin-left: 5px;
+    position: absolute;
+    top: 0.2em;
+    left: 10em;
+}
+
+.infoConten > div {
+
+    padding: 20px 0;
+}
+
+.infoConten__consid {
+
+    border-top: 3px dashed #495289;
+    border-bottom: 3px dashed #495289;
+}
+
+.infoConten__awaren > h3 {
+
+    color: #3E4FBD;
+    margin-bottom: 10px;
+}
+
+.infoConten__consid > h3 {
+
+    color: #6735B8;
+    margin-bottom: 10px;
+}
+
+.infoConten__conver > h3 {
+
+    color: #A220B6;
+    margin-bottom: 10px;
+}
+
+.infoConten > div > p {
+
+    font-size: 15px;
+    padding: 4px 0;
+}
+
+.infoConten > div > p::before {
+
+    content: "●";
+    margin-right: 7px;
+    color: #22E49E;
+}
+
+.casos {
+
+    background: url(../../images/soluciones/lineas-mobile.png) no-repeat center center;
+    background-size: 20em;
+    padding: 0 30px;
+    text-align: center;
+    position: relative;
+    z-index: 30;
+    top: 5.5em;
+}
+
+.casos > a {
+
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #FF7F00;
+    padding: 11px 0;
+    display: inline-block;
+    width: 140px;
+    text-align: center;
+    border-radius: 25px;
+    font-size: 15px;
+    margin: 20px 0;
+}
+
+.casos__box > div {
+
+    background-color: #fff;
+    margin-bottom: 25px;
+    border-radius: 20px;
+    padding: 30px 20px;
+    box-shadow: 0 0 8px 1px rgb(195, 195, 195);
+    text-align: left;
+}
+
+.casos__box > div > h3 {
+
+    font-size: 22px;
+    margin: 0 5em 0.5em 0;
+}
+
+.casos__box > div > span {
+
+    font-size: 3.3em;
+    font-weight: 600;
+    color: #22E49E;
+
+}
+
+.casos__box > div > p {
+
+    margin-top: 11px;
+}
+
+footer {
+
+    background: url(../../images/soluciones/fondo-footer-mobile.png) no-repeat;
+    background-size: cover;
+    border-radius: 30px 30px 0 0;
+    padding: 130px 25px 40px 25px;
+    position: relative;
+}
+
+
+
+.piePag {
+
+    margin-top: 40px;
+}
+
+.piePag__conver {
+
+    border-top: 1px solid rgb(173, 173, 173);
+    border-bottom: 1px solid rgb(173, 173, 173);
+    text-align: center;
+    padding: 25px 0 35px 0;
+}
+
+.piePag__conver > h3 {
+
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0 10px 18px 10px;
+    line-height: 30px;
+}
+
+.piePag__conver > a {
+
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #FF7F00;
+    padding: 14px 0;
+    display: inline-block;
+    width: 140px;
+    text-align: center;
+    border-radius: 25px;
+    font-size: 14px;
+}
+
+.piePag__enlacesSub {
+
+    border-bottom: 1px solid rgb(173, 173, 173);
+    padding: 25px 0;
+}
+
+.piePag__enlacesSub > form {
+
+    text-align: center;
+}
+
+.piePag__enlacesSub > form > label {
+
+    font-size: 18px;
+    font-size: 500;
+}
+
+.piePag__enlacesSub .inputEmail {
+
+    margin-top: 10px;
+}
+
+.piePag__enlacesSub .inputEmail > input[type=email] {
+
+    outline: none;
+    font-family: Omnes;
+    padding: 12px 15px;
+    border-radius: 20px;
+    border: 1px solid rgb(160, 160, 160);
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.piePag__enlacesSub .inputEmail > input[type=submit] {
+
+    text-decoration: none;
+    outline: none;
+    border: none;
+    color: #000;
+    background-color: #FF7F00;
+    padding: 12px;
+    border-radius: 20px;
+    font-size: 15px;
+}
+
+.piePag__enlacesSub .inputEmail > input[type=submit]:hover {
+
+    cursor: pointer;
+}
+
+.piePag__enlacesLocal {
+
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.piePag__enlacesLocal--uno,  .piePag__enlacesLocal--dos{
+
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.piePag__enlacesLocal--dos {
+
+    text-align: right;
+    margin-left: 10px;
+} 
+
+.piePag__enlacesLocal--uno > a, .piePag__enlacesLocal--dos > a {
+
+    color: rgb(54, 54, 54);
+    text-decoration: none;
+    margin-bottom: 8px;
+}
+
+.piePag__enlacesLocal--uno > a:hover, .piePag__enlacesLocal--dos > a:hover {
+
+    cursor: pointer;
+}
+
+.piePag__copyMov {
+
+    margin-top: 15px;
+    text-align: center;
+}
+
+.piePag__copyMov > div > a {
+
+    margin: 0 4px;
+}
+
+.piePag__copyMov > div > a:nth-child(1) {
+
+    filter: brightness(50%);
+}
+
+.piePag__copyMov > p {
+
+    font-size: 11px;
+    margin-top: 5px;
+}
+
+@media screen and (min-width: 768px) {
+
+    header {
+
+        background: url(../../images/soluciones/banner.png) no-repeat center center;
+        background-size: cover;
+    }
+
+    .navMovil {
+
+        margin: 0 30px;
+    }
+
+    .headerConten {
+
+        margin: 6vw auto 22vw auto;
+        text-align: center;
+    }
+
+    .headerConten__tit {
+
+        font-size: 3.3vw;
+        line-height: 4.5vw;
+    }
+
+    .headerConten__subtit {
+
+        font-size: 1.7vw;
+        width: 45%;
+        margin: 10px auto 0 auto;
+    }
+
+    .objetivos {
+
+        background: url(../../images/soluciones/fondo-1.jpg) no-repeat bottom right;
+        background-size: 100%;
+        padding-top: 0;
+    }
+    
+    .objetivos > h2 {
+    
+        font-size: 19px;
+    }
+    
+    .objetivos > p {
+    
+        margin: 13px auto 20px auto;
+        width: 10em;
+        font-size: 28px;
+    }
+    
+    .objetivos__info > img {
+    
+        display: block;
+        width: 65%;
+        margin: 40px auto;
+    }
+
+    .objetivos__conten {
+
+        display: flex;
+        align-items: flex-start;
+        padding: 0 4.5em 4em 4.5em;
+    }
+    
+    .objetivos__conten > div {
+    
+        padding: 0;
+    }
+
+    .conten:nth-child(3n-3) {
+
+        border-left: 3px dashed #495289;
+        border-right: 3px dashed #495289;
+    }
+    
+    .conten > img {
+    
+        display: none;
+    }
+    
+    .conten > div {
+
+        padding: 5px 7px 15px 7px;
+        margin-bottom: 0;
+    }
+    
+    .conten > div > p {
+    
+        font-size: 15px;
+        margin-right: 1.5em;
+    }
+    
+    hr {
+    
+        display: none;
+    }
+
+    .resultados {
+
+        background-color: #fff;
+        padding-bottom: 30px;
+        display: flex;
+    }
+    
+    .resultados > img {
+    
+        width: 55%;
+    }
+
+    .casos {
+
+        background: url(../../images/soluciones/lineas.png) no-repeat center center;
+        background-size: 46em;
+    }
+
+    .casos > h2 {
+
+        font-size: 27px;
+    }
+
+    .casos__box {
+
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    
+    .casos__box > div {
+    
+        width: 16em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .casos__box > div:nth-child(2) {
+
+        margin: 0 15px;
+        height: 17.2em;
+    }
+    
+    .casos__box > div > h3 {
+    
+        margin: 0 2.6em 0.2em 0;
+    }
+
+    footer {
+
+        background: url(../../images/soluciones/fondo-footer.png) no-repeat top center;
+        background-color: 100%;
+        border-radius: 160px 160px 0 0;
+        padding: 75px 25px 40px 25px;
+    }
+    
+    .piePag {
+    
+        margin-top: 100px;
+    }
+    
+    .piePag__conver {
+    
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 90%;
+        margin: 0 auto;
+        padding: 25px 30px 35px 30px;
+    }
+    
+    .piePag__conver > h3 {
+    
+        font-size: 32px;
+        margin: 0 10px 18px 10px;
+        width: 40%;
+        line-height: 35px;
+        text-align: left;
+        word-spacing: 3px;
+    }
+
+    .piePag__enlaces {
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .piePag__enlacesSub {
+    
+        border: 0;
+        padding: 25px 0;
+        
+    }
+    
+    .piePag__enlacesSub > form {
+    
+        text-align: left;
+        display: flex;
+        align-items: center;
+    }
+    
+    .piePag__enlacesSub > form > label {
+    
+        font-size: 17px;
+        margin-right: 10px;
+    }
+    
+    .piePag__enlacesSub .inputEmail {
+    
+        margin: 0;
+    }
+    
+    .piePag__enlacesSub .inputEmail > input[type=email] {
+
+        padding: 11px 15px;
+        width: 12em;
+    }
+    
+    .piePag__enlacesSub .inputEmail > input[type=submit] {
+        
+        padding: 11px;
+
+    }
+    
+    .piePag__enlacesLocal {
+    
+        justify-content: flex-start;
+    }
+    
+    .piePag__enlacesLocal--uno,  .piePag__enlacesLocal--dos{
+    
+        display: flex;
+        flex-direction: row;
+        font-size: 12px;
+    }
+    
+    .piePag__enlacesLocal--dos {
+    
+        display: none;
+    } 
+    
+    .piePag__enlacesLocal--uno > a, .piePag__enlacesLocal--dos > a {
+    
+        color: rgb(54, 54, 54);
+        text-decoration: none;
+        margin: 0 8px 8px 0;
+    }
+
+    .piePag__enlacesLocal--esc > a {
+        
+        color: rgb(54, 54, 54);
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 12px;
+    }
+    
+    .piePag__copyMov {
+    
+       display: none;
+    }
+    
+    .piePag__copyEsc {
+
+        display: inline-block;
+        text-align: right;
+    }
+
+    .piePag__copyEsc > div > .socialMedia {
+    
+        margin: 0 3px;
+        transition: .3s;
+    }
+    
+    .piePag__copyEsc > div > .socialMedia:hover{
+
+        filter: invert(0.24) sepia(1) saturate(20) hue-rotate(340deg) brightness(1.04);
+    }
+    
+    .piePag__copyEsc > p {
+    
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    .navMovil {
+
+        display: none;
+    }
+
+    .navEsc {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 63px;
+    }
+
+    .navEsc > div:nth-child(1) {
+
+        display: inline-block;
+    }
+
+    .navEsc > div:nth-child(1) > img {
+
+        width: 8.3em;
+    }
+
+    .navEsc > div > a {
+
+        text-decoration: none;
+        outline: none;
+        color: #fff;
+        margin-left: 1.3em;
+        font-size: 16px;
+        transition: .1s;
+    }
+
+    .navEsc > div > a:hover {
+
+        border-bottom: 3px solid #22E49E;
+    }
+
+    .navEsc > div > a:nth-child(3) {
+
+        border-bottom: 3px solid #22E49E;
+    }
+
+    .navEsc__menu--ultimo {
+
+        font-weight: 600;
+        background-color: #22E49E;
+        padding: 12px 30px;
+        border-radius: 30px;
+    }
+
+    .headerConten__subtit {
+
+        font-size: 1.7vw;
+        width: 45%;
+        margin: 10px auto 0 auto;
+        line-height: 28px;
+    }
+
+    .resultados {
+
+        padding-bottom: 0;
+        align-items: center;
+        height: 44em;
+    }
+
+    .objetivos__conten > .conten {
+
+        padding: 5px 10px 15px 16px;
+        margin-bottom: 0;
+    }
+
+    .objetivos__conten > .conten:first-child {
+
+        padding: 5px 6px 15px 8px;
+    }
+
+    .casos {
+
+        background: url(../../images/soluciones/lineas.png) no-repeat center 1em;
+        background-size: 52em;
+    }
+
+    .casos__box > div {
+        
+        width: 17em;
+        padding: 50px 30px;
+    }
+
+    .casos__box > div:nth-child(2) {
+        margin: 0 20px;
+        height: 19.7em;
+    }
+
+}
+
+@media screen and (min-width: 1280px) {
+
+    .resultados {
+
+        height: 55em;
+    }
+
+    .casos {
+
+        background: url(../../images/soluciones/lineas.png) no-repeat center 2em;
+        background-size: 53em;
+    }
+
+    .casos__box > div {
+        
+        width: 18em;
+        padding: 60px 40px;
+    }
+
+    .casos__box > div:nth-child(2) {
+        
+        margin: 0 25px;
+        height: 21em;
+    }
+
+    .piePag__enlaces {
+
+        justify-content: space-between;
+        padding: 0 90px;
+    }
+}

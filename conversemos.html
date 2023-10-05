@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/conversemos.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="menuMovil hidden">
+            <div class="menuMovil__botonLogo">
+                <button class="menuMovil__botonCerrar"><img src="images/home/ico-cerrar-mobile.svg" alt="menu-close"></button>
+                <img class="menuMovil__logo" src="images/home/logo-mobile.svg" alt="logo">
+            </div>
+            <div class="menuMovil__menu">
+                <a href="home.html">Home</a>
+                <a href="nosotros.html">¿Porqué Cencosud Media?</a>
+                <a href="soluciones.html">Soluciones</a>
+                <a href="productos.html">Productos</a>
+                <a href="blog.htmtl">Blog</a>
+                <a href="conversemos.html" class="menuMovil__menu--ultimo">Conversemos</a>
+            </div>
+            <div class="menuMovil__redes">
+                <p>SÍGUENOS</p>
+                <a href="#"><img src="images/home/Linkedin.svg" alt="linkedin-logo"></a>
+                <a href="#"><img src="images/home/Twitter.svg" alt="twitter-logo"></a>
+                <a href="#"><img src="images/home/email.svg" alt="email-logo"></a>
+            </div>
+        </div>
+        <nav class="navMovil">
+            <div>
+                <img src="images/home/logo.svg" alt="logo">
+            </div>
+            <button class="navMovil__boton"><img src="images/home/ico-menu.png" alt="menu-burguer"></button>
+        </nav>
+        <nav class="navEsc">
+            <div>
+                <img src="images/home/logo.svg" alt="logo">
+            </div>
+            <div>
+                <a href="home.html">Home</a>
+                <a href="nosotros.html">¿Porqué Cencosud Media?</a>
+                <a href="soluciones.html">Soluciones</a>
+                <a href="productos.html">Productos</a>
+                <a href="blog.html">Blog</a>
+                <a href="conversemos.html" class="navEsc__menu--ultimo">Conversemos</a>
+            </div>
+        </nav>
+        <div class="headerConten">
+            <h1 class="headerConten__tit">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h1>
+            <h2 class="headerConten__subtit">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, facere! Impedit sint deserunt commodi, 
+                inventore expedita sunt.</h2>
+        </div>
+    </header>
+    <main>
+        <h2>Conversemos</h2>
+        <div class="converEsc">
+            <h2>Conversemos</h2>
+            <p>¿Prefieres un email?<br>
+                info.ads@bestbuy.com</p><br>
+            <p>Contacto de Prensa<br>
+                press@bestbuy.com</p>
+        </div>
+        <form action="#">
+            <h3>¿Como te gustaría que te contactemos?</h3>
+            <label for="whatsapp"><input type="radio" name="metodo-contacto" id="whatsapp" checked>
+                <div class="radio"></div>Whatsapp
+            </label>
+            <label for="telefono"><input type="radio" name="metodo-contacto" id="telefono">
+                <div class="radio"></div>Teléfono
+            </label>
+            <label for="correo"><input type="radio" name="metodo-contacto" id="correo">
+                <div class="radio"></div>Correo
+            </label>
+            <div class="inputs">
+                <input class="inputs__conten" id="nombre" type="text" placeholder="Nombre">
+                <input class="inputs__conten" id="email" type="email" placeholder="Correo">
+                <input class="inputs__conten" id="telefono" type="tel" placeholder="Teléfono">
+                <input class="inputs__conten" id="pais" type="text" placeholder="País">
+                <input class="inputs__conten" id="marca" type="text" placeholder="Marca">
+                <textarea id="mensaje" placeholder="Mensaje"></textarea>
+                <input id="envio" type="submit" value="Enviar">
+            </div>
+        </form>
+        <div class="converMob">
+            <p>¿Prefieres un email?<br>
+                info.ads@bestbuy.com</p><br>
+            <p>Contacto de Prensa<br>
+                press@bestbuy.com</p>
+        </div>
+        <div class="imagen">
+            <img src="images/conversemos/imagen-circulo.png" alt="hombre">
+        </div>
+    </main>
+    <footer>
+        <div class="piePag">
+            <div class="piePag__enlaces">
+                <div class="piePag__enlacesSub">
+                    <form>
+                        <label for="sub_correo">Suscribir al newsletter</label>
+                        <div class="inputEmail">
+                            <input type="email" name="email" id="sub_correo">
+                            <input type="submit" value="Ok">
+                        </div>
+                    </form>
+                    <div class="piePag__enlacesLocal">
+                        <div class="piePag__enlacesLocal--uno">
+                            <a href="#">HOME</a>
+                            <a href="#">PORQUE CENCOSUD MEDIA</a>
+                            <a href="#">SOLUCIONES</a>
+                            <a href="#">PRODUCTOS</a>
+                            <a href="#">CASOS DE ÉXITO</a>
+                            <a href="#">BLOG</a>
+                            <a href="#">CONTACTO</a>
+                        </div>
+                        <div class="piePag__enlacesLocal--dos">
+                            <a href="#">POLÍTICAS DE PRIVACIDAD</a>
+                            <a href="#">TÉRMINOS DE SERVICIO</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="piePag__copyMov">
+                    <div>
+                        <a href="#"><img src="images/home/Linkedin.svg" alt="linkedin-logo"></a>
+                        <a href="#"><img src="images/home/youtube.svg" alt="youtube-logo"></a>
+                    </div>
+                    <p>© 2022 All rights reserved</p>
+                </div>
+                <div class="piePag__copyEsc">
+                    <div>
+                        <a href="#" class="socialMedia"><img src="images/home/Linkedin.svg" alt="linkedin-logo"></a>
+                        <a href="#" class="socialMedia"><img src="images/home/youtube.svg" alt="youtube-logo"></a>
+                    </div>
+                    <div class="piePag__enlacesLocal--esc">
+                        <a href="#">TÉRMINOS DE SERVICIO</a>
+                        <a href="#">POLÍTICAS DE PRIVACIDAD</a>
+                    </div>
+                    <p>© 2022 All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+<script src="src/js/home.js"></script>
+</body>
+</html>

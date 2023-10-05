@@ -1,0 +1,857 @@
+@font-face {
+    font-family: Omnes;
+    src: url(../../tipografias/Omnes.ttf);
+    }
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    min-height: 100vh;
+    font-family: Omnes;
+    background-color: #fff;
+}
+
+header {
+
+    background: url(../../images/blog/banner-mob.png) no-repeat bottom center;
+    background-size: cover;
+    padding: 30px 25px;
+    position: relative; 
+}
+
+.none {
+
+    display: none;
+}
+
+.hidden {
+
+    visibility: hidden;
+}
+
+.navEsc, .piePag__copyEsc{
+
+    display: none;
+}
+
+.navMovil {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navMovil > div > img {
+
+    width: 140px;
+}
+
+.navMovil__boton, .menuMovil__botonCerrar {
+
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.navMovil__boton:hover {
+
+    cursor: pointer;
+}
+
+.menuMovil {
+
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.menuMovil__botonLogo {
+
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.menuMovil__botonCerrar {
+
+    align-self: flex-end;
+    margin-bottom: 10px;
+}
+
+.menuMovil__botonCerrar:hover {
+
+    cursor: pointer;
+}
+
+.menuMovil__logo {
+
+    width: 45px;
+    margin: 0 auto;
+}
+
+.menuMovil__menu {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.menuMovil__menu > a {
+
+    text-decoration: none;
+    color: rgb(27, 27, 27);
+    font-size: 19px;
+    border-bottom:  1px solid rgb(211, 211, 211);
+    width: 90%;
+    padding: 18px 0;
+    text-align: center;
+    
+}
+
+.menuMovil__menu > .menuMovil__menu--ultimo {
+
+    border: none;
+    color: #22E49E;
+    font-weight: 600;
+}
+
+.menuMovil__menu--ultimo {
+
+    border: none;
+}
+
+.menuMovil__redes {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0 10px 0;
+    border-top: 1px solid rgb(211, 211, 211);
+}
+
+.menuMovil__redes > p {
+
+    letter-spacing: 2px;
+    margin-right: 20px;
+}
+
+.menuMovil__redes > a {
+
+    margin-right: 14px;
+}
+
+.menuMovil__redes > a:hover {
+
+    cursor: pointer;
+}
+
+.headerConten {
+
+    color: #fff;
+    margin: 18vw 5vw 30.3vw 0;
+}
+
+.headerConten__tit {
+
+    font-weight: 500;
+    font-size: 7vw;
+    line-height: 9vw;
+}
+
+.headerConten__subtit {
+
+    font-size: 3.5vw;
+    font-weight: 500;
+    margin-top: 8px;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+
+main > h2 {
+
+    margin: 50px 0 17px 0;
+    text-align: center;
+    font-size: 26px;
+}
+
+main > p {
+
+    font-size: 20px;
+    text-align: center;
+    margin: 0 40px;
+}
+
+section {
+
+    margin-top: 70px;
+    padding: 0 20px;
+}
+
+.categoria__boton {
+
+    background-color: transparent;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.categoria__boton > img {
+
+    cursor: pointer;
+}
+
+.categoria__boton > span {
+
+    margin-left: 12px;
+}
+
+.categoria__seleccion {
+
+    box-shadow: 0px 0px 8px 0px #c1c1c1;
+    padding: 30px 30px 15px 30px;
+    margin-top: 35px;
+    border-radius: 25px;
+    flex-direction: column;
+}
+
+.categoria__seleccion > p {
+
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+form > label {
+
+    margin-left: 6px;
+}
+
+input[type=checkbox] {
+
+    margin-bottom: 18px;    
+}
+
+.cajas {
+
+    margin-top: 20px;
+}
+
+.cajas__conten {
+
+    width: 100%;
+    box-shadow: 0px 0px 8px 0px #c1c1c1;
+    border-radius: 25px;
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    background-color: #fff;
+}
+
+.cajas__conten > img {
+
+    width: 100%;
+    border-radius: 25px 25px 0 0;
+}
+
+.cajas__conten > span {
+
+    background-color: #22E49E;
+    font-size: 13px;
+    padding: 5px 12px;
+    border-radius: 8px;
+    position: relative;
+    left: 1.4em;
+    bottom: 1em;
+}
+
+.cajas__conten > h3 {
+
+    padding: 10px 20px;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+.cajas__conten > p {
+
+    padding: 0 20px;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+
+.cajas__conten > a {
+
+    text-decoration: none;
+    outline: none;
+    color: #000;
+    word-spacing: 2px;
+    letter-spacing: 3px;
+    font-size: 12px;
+    padding: 0 20px;
+    transition: .4s;
+}
+
+.cajas__conten > a > span {
+
+    font-size: 16px;
+}
+
+.cajas__conten > a:hover {
+
+    cursor: pointer;
+    color: #22E49E;
+}
+
+footer {
+
+    background: url(../../images/blog/fondo-footer-mobile.png) no-repeat center center;
+    background-size: cover;
+    border-radius: 30px 30px 0 0;
+    padding: 20px 25px 40px 25px;
+    position: relative;
+}
+
+.piePag {
+
+    margin-top: 40px;
+}
+
+.piePag__conver {
+
+    border-top: 1px solid rgb(173, 173, 173);
+    border-bottom: 1px solid rgb(173, 173, 173);
+    text-align: center;
+    padding: 25px 0 35px 0;
+}
+
+.piePag__conver > h3 {
+
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0 10px 18px 10px;
+    line-height: 30px;
+}
+
+.piePag__conver > a {
+
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #FF7F00;
+    padding: 14px 0;
+    display: inline-block;
+    width: 140px;
+    text-align: center;
+    border-radius: 25px;
+    font-size: 14px;
+}
+
+.piePag__enlacesSub {
+
+    border-bottom: 1px solid rgb(173, 173, 173);
+    padding: 25px 0;
+}
+
+.piePag__enlacesSub > form {
+
+    text-align: center;
+}
+
+.piePag__enlacesSub > form > label {
+
+    font-size: 18px;
+    font-size: 500;
+}
+
+.piePag__enlacesSub .inputEmail {
+
+    margin-top: 10px;
+}
+
+.piePag__enlacesSub .inputEmail > input[type=email] {
+
+    outline: none;
+    font-family: Omnes;
+    padding: 12px 15px;
+    border-radius: 20px;
+    border: 1px solid rgb(160, 160, 160);
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.piePag__enlacesSub .inputEmail > input[type=submit] {
+
+    text-decoration: none;
+    outline: none;
+    border: none;
+    color: #000;
+    background-color: #FF7F00;
+    padding: 12px;
+    border-radius: 20px;
+    font-size: 15px;
+}
+
+.piePag__enlacesSub .inputEmail > input[type=submit]:hover {
+
+    cursor: pointer;
+}
+
+.piePag__enlacesLocal {
+
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.piePag__enlacesLocal--uno,  .piePag__enlacesLocal--dos{
+
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.piePag__enlacesLocal--dos {
+
+    text-align: right;
+    margin-left: 10px;
+} 
+
+.piePag__enlacesLocal--uno > a, .piePag__enlacesLocal--dos > a {
+
+    color: rgb(54, 54, 54);
+    text-decoration: none;
+    margin-bottom: 8px;
+}
+
+.piePag__enlacesLocal--uno > a:hover, .piePag__enlacesLocal--dos > a:hover {
+
+    cursor: pointer;
+}
+
+.piePag__copyMov {
+
+    margin-top: 15px;
+    text-align: center;
+}
+
+.piePag__copyMov > div > a {
+
+    margin: 0 4px;
+}
+
+.piePag__copyMov > div > a:nth-child(1) {
+
+    filter: brightness(50%);
+}
+
+.piePag__copyMov > p {
+
+    font-size: 11px;
+    margin-top: 5px;
+}
+
+@media screen and (min-width : 768px) {
+
+    header {
+
+        background: url(../../images/blog/banner.png) no-repeat center center;
+        background-size: cover;
+    }
+
+    .navMovil {
+
+        margin: 0 30px;
+    }
+
+    .headerConten {
+
+        margin: 6vw auto 22vw auto;
+        text-align: center;
+    }
+
+    .headerConten__tit {
+
+        font-size: 3.3vw;
+        line-height: 4.5vw;
+    }
+
+    .headerConten__subtit {
+
+        font-size: 1.8vw;
+        width: 45%;
+        margin: 10px auto 0 auto;
+        line-height: 30px;
+    }
+
+    main {
+
+        background: url(../../images/blog/fondo.png) no-repeat center center;
+        background-size: cover;
+        padding: 0 80px;
+    }
+
+    main > h2 {
+
+        margin: 0 0 17px 0;
+        text-align: center;
+        font-size: 26px;
+    }
+    
+    main > p {
+    
+        font-size: 20px;
+        text-align: center;
+        margin: 0 40px;
+    }
+
+    section {
+
+        display: flex;
+        margin-top: 40px;
+    }
+
+    .categoria__boton {
+
+        display: none;
+    }
+    
+    .categoria__seleccion {
+    
+        box-shadow: 0px 0px 8px 0px #c1c1c1;
+        padding: 30px 30px 15px 30px;
+        margin-top: 22px;
+        margin-right: 30px;
+        border-radius: 25px;
+        display: flex;
+        width: 14em;
+    }
+    
+    .categoria__seleccion > p {
+    
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    
+    form > label {
+    
+        margin-left: 6px;
+        font-size: 14px;
+    }
+    
+    input[type=checkbox] {
+    
+        margin-bottom: 18px;    
+    }
+    
+    .cajas {
+    
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 0 20px;
+    }
+    
+    .cajas__conten {
+    
+        width: 90%;
+        box-shadow: 0px 0px 8px 0px #c1c1c1;
+        border-radius: 25px;
+        margin-bottom: 25px;
+        padding-bottom: 20px;
+    }
+    
+    .cajas__conten > img {
+    
+        width: 100%;
+        border-radius: 25px 25px 0 0;
+    }
+    
+    .cajas__conten > span {
+    
+        background-color: #22E49E;
+        font-size: 13px;
+        padding: 5px 12px;
+        border-radius: 8px;
+        position: relative;
+        left: 1.4em;
+        bottom: 1em;
+    }
+    
+    .cajas__conten > h3 {
+    
+        padding: 10px 20px;
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 22px;
+    }
+    
+    .cajas__conten > p {
+    
+        padding: 0 20px;
+        font-size: 14px;
+        line-height: 22px;
+        margin-bottom: 10px;
+    }
+    
+    .cajas__conten > a {
+    
+        text-decoration: none;
+        outline: none;
+        color: #000;
+        word-spacing: 2px;
+        letter-spacing: 3px;
+        font-size: 12px;
+        padding: 0 20px;
+        transition: .3s;
+    }
+    
+    .cajas__conten > a > span {
+    
+        font-size: 16px;
+    }
+    
+    .cajas__conten > a:hover {
+    
+        cursor: pointer;
+        color: #22E49E;
+    }
+
+    footer {
+
+        background: url(../../images/blog/fondo-footer.png) no-repeat top center;
+        background-color: 100%;
+        padding: 75px 25px 40px 25px;
+    }
+    
+    .piePag {
+    
+        margin-top: 100px;
+    }
+    
+    .piePag__conver {
+    
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 90%;
+        margin: 0 auto;
+        padding: 25px 30px 35px 30px;
+    }
+    
+    .piePag__conver > h3 {
+    
+        font-size: 32px;
+        margin: 0 10px 18px 10px;
+        width: 40%;
+        line-height: 35px;
+        text-align: left;
+        word-spacing: 3px;
+    }
+
+    .piePag__enlaces {
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .piePag__enlacesSub {
+    
+        border: 0;
+        padding: 25px 0;
+        
+    }
+    
+    .piePag__enlacesSub > form {
+    
+        text-align: left;
+        display: flex;
+        align-items: center;
+    }
+    
+    .piePag__enlacesSub > form > label {
+    
+        font-size: 17px;
+        margin-right: 10px;
+    }
+    
+    .piePag__enlacesSub .inputEmail {
+    
+        margin: 0;
+    }
+    
+    .piePag__enlacesSub .inputEmail > input[type=email] {
+
+        padding: 11px 15px;
+        width: 12em;
+    }
+    
+    .piePag__enlacesSub .inputEmail > input[type=submit] {
+        
+        padding: 11px;
+
+    }
+    
+    .piePag__enlacesLocal {
+    
+        justify-content: flex-start;
+    }
+    
+    .piePag__enlacesLocal--uno,  .piePag__enlacesLocal--dos{
+    
+        display: flex;
+        flex-direction: row;
+        font-size: 12px;
+    }
+    
+    .piePag__enlacesLocal--dos {
+    
+        display: none;
+    } 
+    
+    .piePag__enlacesLocal--uno > a, .piePag__enlacesLocal--dos > a {
+    
+        color: rgb(54, 54, 54);
+        text-decoration: none;
+        margin: 0 8px 8px 0;
+    }
+
+    .piePag__enlacesLocal--esc > a {
+        
+        color: rgb(54, 54, 54);
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 12px;
+    }
+    
+    .piePag__copyMov {
+    
+       display: none;
+    }
+    
+    .piePag__copyEsc {
+
+        display: inline-block;
+        text-align: right;
+    }
+
+    .piePag__copyEsc > div > .socialMedia {
+    
+        margin: 0 3px;
+        transition: .3s;
+    }
+
+    .piePag__copyEsc > div > .socialMedia:hover {
+
+        filter: invert(0.24) sepia(1) saturate(20) hue-rotate(340deg) brightness(1.04);
+    } 
+    
+    .piePag__copyEsc > p {
+    
+        font-size: 12px;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .navMovil {
+
+        display: none;
+    }
+
+    .navEsc {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 63px;
+    }
+
+    .navEsc > div:nth-child(1) {
+
+        display: inline-block;
+    }
+
+    .navEsc > div:nth-child(1) > img {
+
+        width: 8.3em;
+    }
+
+    .navEsc > div > a {
+
+        text-decoration: none;
+        outline: none;
+        color: #fff;
+        margin-left: 1.3em;
+        font-size: 16px;
+        transition: .1s;
+    }
+
+    .navEsc > div > a:hover {
+
+        border-bottom: 3px solid #22E49E;
+    }
+
+    .navEsc > div > a:nth-child(5) {
+
+        border-bottom: 3px solid #22E49E;
+    }
+
+    .navEsc__menu--ultimo {
+
+        font-weight: 600;
+        background-color: #22E49E;
+        padding: 12px 30px;
+        border-radius: 30px;
+    }
+
+    .cajas {
+    
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media screen and (min-width: 1280px) {
+
+    .cajas {
+        
+        grid-gap: 0;
+    }
+    
+    .cajas__conten {
+    
+        width: 85%;
+    }
+
+    .piePag__enlaces {
+
+        justify-content: space-between;
+        padding: 0 90px;
+    }
+}
+
+@media screen and (min-width: 1536px) {
+
+    .cajas {
+    
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
